@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d8baa14d19be5f69e7b20507d84a406d"
+name = "task"
+handle = "task-18"
+application_url = "https://inquire-todd-interact-airports.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "nischalbaniya.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://inquire-todd-interact-airports.trycloudflare.com/auth/callback",
+  "https://inquire-todd-interact-airports.trycloudflare.com/auth/shopify/callback",
+  "https://inquire-todd-interact-airports.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
